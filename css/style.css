@@ -1,0 +1,12 @@
+body {
+  font-family: "Prompt", sans-serif;
+}
+/*+++++++++ Banner ++++++++*/
+.banner {
+  background-image: url(../assets/BG3-landingpage\ 1.png);
+}
+
+.banner-img-container {
+  position: relative;
+  bottom: -80px;
+}

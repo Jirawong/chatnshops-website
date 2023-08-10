@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS / Tailwind -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="banner">
+      <!--Nav Bar-->
+
+      <nav
+        class="flex items-center justify-between container px-24 mx-auto pt-4"
+      >
+        <div class="flex items-center w-1/2">
+          <div class="logo-container">
+            <img src="assets/navigation-logo-img.svg" alt="" />
+          </div>
+          <ul class="flex grow justify-between ms-12 text-white font-medium">
+            <li><a href="#" class="text-blue-600">หน้าแรก</a></li>
+            <li><a href="#" class="">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="">วิธีการใช้งาน</a></li>
+            <li><a href="#" class="">แพ็กเกจ</a></li>
+          </ul>
+        </div>
+        <div
+          class="flex text-white justify-between items-center font-semibold w-1/5"
+        >
+          <button class="lang-dropdown">
+            <img src="assets/Thailand (TH).png" alt="" />
+          </button>
+          <a href="#" class="">เข้าสู่ระบบ</a>
+          <a href="#" class="bg-blue-600 py-2 px-5 rounded-full">สมัครสมาชิก</a>
+        </div>
+      </nav>
+
+      <div class="container mx-auto text-center mt-16">
+        <h1 class="font-bold text-white" style="font-size: 3.5rem">
+          ระบบ <span class="text-red-500">Liveสด</span> ดูดคอมเมนต์
+          <br />CFจัดการออเดอร์ และขนส่งราคาถูก
+        </h1>
+        <p class="font-normal text-white leading-8" style="font-size: 1.125rem">
+          เป็นโปรแกรม LIVEสด ดูดคอมเมนต์ CFออเดอร์มาพร้อมระบบจัดการหลังบ้าน
+          ตอบแชทอัจฉริยะ ติดตามลูกค้า <br />เช็คสต๊อกสินค้า
+          จัดการออเดอร์หลังบ้านและยังมีระบบขนส่งด้วยราคาที่เป็นมิตร
+        </p>
+      </div>
+      <div class="banner-img-container flex justify-center">
+        <img src="assets/banner/main.png" alt="" />
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+      <div class="text-center mt-64 container px-24 mx-auto">
+        <h1 class="font-semibold text-5xl">เกี่ยวกับระบบ Chatnshop</h1>
+        <h2 class="leading-8 text-gray-400 text-lg mt-8">
+          Application ที่เชื่อมต่อกับ Platform ออนไลน์ต่าง ๆ รวมไปถึง
+          Marketplace ที่มีระบบ Live <br />
+          ช่วยให้พ่อค้าแม่ค้าออนไลน์สามารถจัดการออเดอร์จากการ
+          ขายสินค้าออนไลน์ได้ด้วยฟังก์ชัน Liveสด, ดูดคอมเมนต์,
+          <br />
+          <span id="collapseContent" class="hidden">
+            คอนเฟิร์มออเดอร์รวมไปถึงระบบ AI ตอบกลับคอมเมนต์แบบอัตโนมัติ
+            จัดการคลังสินค้าออนไลน์
+            <br />และระบบหลังบ้านได้ด้วยตนเองภายในหน้าเดียว
+            สามารถเชื่อมต่อระบบขนส่งเพื่อสร้างรายการส่งสินค้าในราคาพิเศษ
+            <br />พร้อมทั้งเข้ารับถึงหน้าบ้านของท่าน
+          </span>
+        </h2>
+        <button id="toggleButton">
+          <img src="assets/gridicons_dropdown.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggleButton").click(function () {
+          $("#collapseContent").slideToggle("fast");
+        });
+      });
+    </script>
+  </body>
+</html>
