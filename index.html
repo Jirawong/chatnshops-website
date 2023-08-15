@@ -8,6 +8,7 @@
     <!-- CSS / Tailwind -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dist/style.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,33 +22,75 @@
     <!-- Banner -->
     <div class="banner">
       <!--Nav Bar-->
+      <div class="banner-bg-icons relative xl:block hidden">
+        <div class="icon-1 absolute top-36 left-12 w-2/12 animate-wiggle">
+          <img src="assets/banner/img_1.png" class="w-7/12" alt="" />
+        </div>
+        <div
+          class="icon-2 absolute top-80 mt-5 left-32 w-1/12 animate-wiggle delay-2"
+        >
+          <img src="assets/banner/img_2.png" class="w-full" alt="" />
+        </div>
+        <div
+          class="icon-3 absolute top-36 right-12 w-1/12 animate-wiggle delay-1"
+        >
+          <img src="assets/banner/img_3.png" alt="" />
+        </div>
+
+        <div
+          class="icon-4 absolute mt-5 top-80 right-32 w-1/12 animate-wiggle delay-3"
+        >
+          <img src="assets/banner/img_4.png" class="w-full" alt="" />
+        </div>
+      </div>
 
       <nav
-        class="flex items-center justify-between container px-24 mx-auto pt-4"
+        class="flex items-center justify-between xl:container 2xl:px-24 px-5 mx-auto pt-4"
       >
         <div class="flex items-center w-1/2">
           <div class="logo-container">
             <img src="assets/navigation-logo-img.svg" alt="" />
           </div>
-          <ul class="flex grow justify-between ms-12 text-white font-medium">
+          <ul
+            class="xl:flex hidden grow justify-between ms-12 text-white font-medium"
+          >
             <li><a href="#" class="text-blue-600">หน้าแรก</a></li>
-            <li><a href="#" class="">เกี่ยวกับเรา</a></li>
-            <li><a href="#" class="">วิธีการใช้งาน</a></li>
-            <li><a href="#" class="">แพ็กเกจ</a></li>
+            <li>
+              <a href="#" class="hover:text-blue-600 duration-300"
+                >เกี่ยวกับเรา</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 duration-300"
+                >วิธีการใช้งาน</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 duration-300">แพ็กเกจ</a>
+            </li>
           </ul>
         </div>
         <div
-          class="flex text-white justify-between items-center font-semibold w-1/5"
+          class="flex text-white xl:justify-between justify-end items-center font-semibold w-1/5"
         >
           <button class="lang-dropdown">
             <img src="assets/Thailand (TH).png" alt="" />
           </button>
-          <a href="#" class="">เข้าสู่ระบบ</a>
-          <a href="#" class="bg-blue-600 py-2 px-5 rounded-full">สมัครสมาชิก</a>
+          <a href="#" class="hover:text-blue-600 duration-300 xl:block hidden"
+            >เข้าสู่ระบบ</a
+          >
+          <a
+            href="#"
+            class="bg-blue-600 hover:bg-white hover:text-blue-600 duration-300 py-2 px-5 rounded-full xl:block hidden"
+            >สมัครสมาชิก</a
+          >
+          <button class="xl:hidden block ms-5" id="navbar-toggle">
+            <img src="assets/bars-3-bottom-right.png" class="w-10" alt="" />
+          </button>
         </div>
       </nav>
 
-      <div class="container mx-auto text-center mt-16">
+      <div class="lg:container mx-auto text-center mt-16">
         <h1 class="font-bold text-white" style="font-size: 3.5rem">
           ระบบ <span class="text-red-500">Liveสด</span> ดูดคอมเมนต์
           <br />CFจัดการออเดอร์ และขนส่งราคาถูก
@@ -58,8 +101,130 @@
           จัดการออเดอร์หลังบ้านและยังมีระบบขนส่งด้วยราคาที่เป็นมิตร
         </p>
       </div>
-      <div class="banner-img-container flex justify-center">
-        <img src="assets/banner/main.png" alt="" />
+
+      <div class="container mx-auto">
+        <div
+          class="flex relative top-20 2xl:justify-between justify-center items-center"
+        >
+          <div class="weekly-growth 2xl:block hidden">
+            <div class="relative -top-8 left-32">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="40"
+                viewBox="0 0 45 40"
+                fill="none"
+              >
+                <path
+                  d="M43.6646 4.41763C44.0351 4.60287 44.4856 4.45271 44.6708 4.08222C44.8561 3.71174 44.7059 3.26123 44.3354 3.07599L43.6646 4.41763ZM22.844 15.6219L22.3709 16.2038L22.844 15.6219ZM5.43779 39.5716C5.71194 39.8821 6.1859 39.9116 6.4964 39.6374L11.5563 35.1698C11.8668 34.8957 11.8963 34.4217 11.6222 34.1112C11.348 33.8007 10.874 33.7712 10.5635 34.0454L6.06581 38.0166L2.09461 33.5189C1.82046 33.2083 1.3465 33.1789 1.036 33.453C0.725494 33.7272 0.696026 34.2011 0.970181 34.5117L5.43779 39.5716ZM44.3354 3.07599C37.0196 -0.581905 28.021 -0.450233 22.5574 2.10247C19.8303 3.37661 17.8036 5.34927 17.5457 7.93059C17.2884 10.5057 18.8303 13.3252 22.3709 16.2038L23.3172 15.04C19.9199 12.2779 18.8562 9.90209 19.0383 8.0797C19.2197 6.26352 20.6773 4.63654 23.1924 3.46145C28.2131 1.11568 36.7303 0.950478 43.6646 4.41763L44.3354 3.07599ZM22.3709 16.2038C24.89 18.2519 26.668 19.3436 27.8267 19.6951C28.3654 19.8585 29.0462 19.9461 29.5477 19.5288C30.0827 19.0836 30.037 18.3982 29.9332 17.9592C29.7097 17.0148 28.9146 15.7835 27.8515 14.6197C26.7654 13.4307 25.3139 12.218 23.6572 11.3359C22.0017 10.4546 20.1021 9.8833 18.141 10.0417C16.1607 10.2016 14.1896 11.1005 12.4129 13.0314C8.90763 16.8408 6.14367 24.6775 5.25145 39.0287L6.74855 39.1217C7.63745 24.8242 10.3852 17.4503 13.5167 14.0471C15.0583 12.3718 16.6869 11.664 18.2618 11.5368C19.8559 11.4081 21.4671 11.8693 22.9523 12.66C24.4362 13.45 25.7553 14.549 26.744 15.6313C27.7556 16.7387 28.3395 17.7384 28.4735 18.3046C28.5483 18.621 28.426 18.5108 28.5883 18.3758C28.7171 18.2686 28.729 18.4013 28.2621 18.2597C27.4096 18.0011 25.8293 17.0824 23.3172 15.04L22.3709 16.2038Z"
+                  fill="#4F4F4F"
+                />
+              </svg>
+            </div>
+            <div class="rounded-2xl bg-white p-3">
+              <p>Weekly growth</p>
+              <div class="svg-container px-8 py-5 max-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="146"
+                  height="56"
+                  viewBox="0 0 146 56"
+                  fill="none"
+                >
+                  <path
+                    d="M1 49.5972C7.66667 54.6142 23.2 52.4617 32 28.38C43 -1.72206 56.4708 41.5709 62.5 49.5972C69.0047 58.2565 81.5 60.7563 90 15.3355C97.8482 -26.6022 112.642 36.0974 115 43.4311C116.5 48.097 122.5 71.597 145 17.3428"
+                    stroke="#6389EB"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <div><div class="rounded-full bg-red-400 p-1.5"></div></div>
+                <p style="font-size: 8px" class="leading-none">12345</p>
+                <div><div class="rounded-full bg-blue-400 p-1.5"></div></div>
+                <div class="flex gap-1 items-center">
+                  <p style="font-size: 8px" class="leading-none">2.4%</p>
+
+                  <div class="svg-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.67267 5.5C2.67267 5.68078 2.81922 5.82733 3 5.82733C3.18078 5.82733 3.32733 5.68078 3.32733 5.5H2.67267ZM3.23146 0.268545C3.10363 0.140716 2.89637 0.140716 2.76854 0.268545L0.68545 2.35164C0.557621 2.47947 0.557621 2.68672 0.68545 2.81455C0.813279 2.94238 1.02053 2.94238 1.14836 2.81455L3 0.96291L4.85164 2.81455C4.97947 2.94238 5.18672 2.94238 5.31455 2.81455C5.44238 2.68672 5.44238 2.47947 5.31455 2.35164L3.23146 0.268545ZM3.32733 5.5L3.32733 0.5H2.67267L2.67267 5.5H3.32733Z"
+                        fill="#FF8933"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/banner/main.png" class="w-3/4" alt="" />
+          <div class="client-Trusted 2xl:block hidden mt-16">
+            <div class="svg-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="40"
+                viewBox="0 0 45 40"
+                fill="none"
+              >
+                <path
+                  d="M1.33541 4.41763C0.964926 4.60287 0.514422 4.45271 0.32918 4.08222C0.143938 3.71174 0.294106 3.26123 0.66459 3.07599L1.33541 4.41763ZM22.156 15.6219L22.6291 16.2038L22.156 15.6219ZM39.5622 39.5716C39.2881 39.8821 38.8141 39.9116 38.5036 39.6374L33.4437 35.1698C33.1332 34.8957 33.1037 34.4217 33.3778 34.1112C33.652 33.8007 34.126 33.7712 34.4365 34.0454L38.9342 38.0166L42.9054 33.5189C43.1795 33.2083 43.6535 33.1789 43.964 33.453C44.2745 33.7272 44.304 34.2011 44.0298 34.5117L39.5622 39.5716ZM0.66459 3.07599C7.98039 -0.581905 16.979 -0.450233 22.4426 2.10247C25.1697 3.37661 27.1964 5.34927 27.4543 7.93059C27.7116 10.5057 26.1697 13.3252 22.6291 16.2038L21.6828 15.04C25.0801 12.2779 26.1438 9.90209 25.9617 8.0797C25.7803 6.26352 24.3227 4.63654 21.8076 3.46145C16.7869 1.11568 8.26972 0.950478 1.33541 4.41763L0.66459 3.07599ZM22.6291 16.2038C20.11 18.2519 18.332 19.3436 17.1733 19.6951C16.6346 19.8585 15.9538 19.9461 15.4523 19.5288C14.9173 19.0836 14.963 18.3982 15.0668 17.9592C15.2903 17.0148 16.0854 15.7835 17.1485 14.6197C18.2346 13.4307 19.6861 12.218 21.3428 11.3359C22.9983 10.4546 24.8979 9.8833 26.859 10.0417C28.8393 10.2016 30.8104 11.1005 32.5871 13.0314C36.0924 16.8408 38.8563 24.6775 39.7486 39.0287L38.2514 39.1217C37.3625 24.8242 34.6148 17.4503 31.4833 14.0471C29.9417 12.3718 28.3131 11.664 26.7382 11.5368C25.1441 11.4081 23.5329 11.8693 22.0477 12.66C20.5638 13.45 19.2447 14.549 18.256 15.6313C17.2444 16.7387 16.6605 17.7384 16.5265 18.3046C16.4517 18.621 16.574 18.5108 16.4117 18.3758C16.2829 18.2686 16.271 18.4013 16.7379 18.2597C17.5904 18.0011 19.1707 17.0824 21.6828 15.04L22.6291 16.2038Z"
+                  fill="#4F4F4F"
+                />
+              </svg>
+            </div>
+
+            <div class="rounded-xl bg-white ps-3 py-3 mt-3">
+              <p>Client Trusted</p>
+              <div class="flex items-center mt-3">
+                <div class="flex h-max">
+                  <div class="img relative">
+                    <img src="assets/banner/client-1.png" class="w-10" alt="" />
+                  </div>
+                  <div class="img relative z-10" style="left: -12px">
+                    <img src="assets/banner/client-2.png" class="w-10" alt="" />
+                  </div>
+                  <div class="img relative z-20" style="left: -24px">
+                    <img src="assets/banner/client-3.png" class="w-10" alt="" />
+                  </div>
+                  <div class="img relative z-30" style="left: -36px">
+                    <img src="assets/banner/client-4.png" class="w-10" alt="" />
+                  </div>
+                  <div class="img relative z-40" style="left: -48px">
+                    <img src="assets/banner/client-5.png" class="w-10" alt="" />
+                  </div>
+                </div>
+                <div class="svg-container relative" style="left: -36px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="17"
+                    viewBox="0 0 18 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081L16.3839 5.60081C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                      fill="#FF8933"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="svg-container relative text-xs ps-2"
+                  style="left: -36px"
+                >
+                  1234+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -84,6 +249,194 @@
         <button id="toggleButton">
           <img src="assets/gridicons_dropdown.png" alt="" />
         </button>
+      </div>
+    </div>
+
+    <!---->
+    <div class="container mx-auto">
+      <div class="grid grid-cols-2">
+        <div class="pt-24">
+          <div class="flex items-center">
+            <div class="box-1 rounded-full p-3">
+              <img src="assets/happy 1.svg" alt="" />
+            </div>
+            <div class="ps-6">
+              <h1 class="f-14 py-1 font-medium">รวดเร็ว ฉับไว</h1>
+              <h1 class="f-16 py-1 font-normal text-gray-400">
+                ด้วยระบบคอนเฟิร์มออเดอร์อัตโนมัติ
+              </h1>
+            </div>
+          </div>
+          <div class="pt-5">
+            <h1 class="f-32 font-semibold">
+              รวดเร็ว ฉับไว <br />ด้วยระบบคอนเฟิร์มออเดอร์ <br />อัตโนมัติ
+            </h1>
+            <h1 class="f-18 pt-5 font-normal text-gray-400">
+              ด้วยระบบ AI ที่ตอบกลับลูกค้า Live พร้อมทั้งสรุปยอด<br />
+              และจัดการคำสั่งซื้อได้แบบอัตโนมัติผ่านทาง Messenger ของลูกค้า<br />
+              ช่วยให้คุณสามารถขายสินค้าอย่างหลากหลายได้ แบบไม่มีสะดุด
+            </h1>
+          </div>
+        </div>
+        <div class="">
+          <img src="assets/block1 Image Animation.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 pt-10">
+        <div class="">
+          <img src="assets/block2 Image Animation.png" alt="" />
+        </div>
+        <div class="pt-24">
+          <div class="flex items-center">
+            <div class="box-2 rounded-full p-3">
+              <img src="assets/happy 1.svg" alt="" />
+            </div>
+            <div class="ps-6">
+              <h1 class="f-14 py-1 font-medium">ระบบหลังบ้าน</h1>
+              <h1 class="f-16 py-1 font-normal text-gray-400">
+                จัดการคลังสินค้าและสรุปรายงานการขาย
+              </h1>
+            </div>
+          </div>
+          <div class="pt-5">
+            <h1 class="f-32 font-semibold">
+              ระบบหลังบ้าน <br />จัดการคลังสินค้าและสรุป <br />รายงานการขาย
+            </h1>
+            <h1 class="f-18 pt-5 font-normal text-gray-400">
+              Chatnshops ช่วยให้คุณสามารถบริหารคลังสินค้าออนไลน์
+              <br />ที่ถูกผูกไว้กับ Application ต่าง ๆ ได้ภายในหน้าเดียว
+              <br />ไม่จำ เป็นต้องจดมืออีกต่อไป ระบบอัตโนมัติจะช่วยให้คุณ
+              <br />ทำงาน ได้ง่าย และรวดเร็วยิ่งขึ้นพร้อมทั้งสรุปรายงาน
+              <br />การขายสินค้า และดึงข้อมูลออกมาได้ด้วยตนเอง
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 block-3 ps-40 pt-10">
+      <div class="pt-10">
+        <div class="flex items-center">
+          <div class="box-3 rounded-full p-3">
+            <img src="assets/happy 1.svg" alt="" />
+          </div>
+          <div class="ps-6">
+            <h1 class="f-14 py-1 font-medium">เชื่อมต่อระบบขนส่ง</h1>
+            <h1 class="f-16 py-1 font-normal text-gray-400">
+              เชื่อมไว้ภายในแอพเดียวจะสร้างออเดอร์หรือเรียก
+              <br />ขนส่งก็ทำได้ไม่ต้องวุ่นวาย
+            </h1>
+          </div>
+        </div>
+        <div class="pt-5">
+          <h1 class="f-32 font-semibold">
+            ระบบหลังบ้าน <br />จัดการคลังสินค้าและสรุป <br />รายงานการขาย
+          </h1>
+          <h1 class="f-18 pt-5 font-normal text-gray-400">
+            Chatnshops เชื่อมต่อกับระบบขนส่งชั้นนำในประเทศ
+            <br />ไว้ให้ท่านแล้วภายในแอพเดียว จะใช้ขนส่งในระบบของเรา
+            <br />หรือจะเชื่อมต่อระบบด้วยตนเองก็ทำได้ไม่ต้องง้อใคร สะดวก สบาย
+            <br />กำไรเพียบ
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="mt-28 bg-app">
+      <div class="grid grid-cols-2 flex items-center">
+        <div class="w-full h-full bg"></div>
+        <div class="flex flex-col content-center py-48">
+          <div class="flex text-center">
+            <h1 class="f-56 font-bold text-white">
+              “ Chatnshops ” <br />เชื่อมต่อกับอะไรได้บ้าง?
+            </h1>
+          </div>
+          <div class="pt-8">
+            <img src="assets/Frame 1597884190.png" alt="" />
+          </div>
+          <div class="pt-5">
+            <h1 class="f-18 font-normal text-white opacity-70">
+              Chatnshops สามารถเชื่อมต่อและใช้งานได้กับ Facebook และเรากำลัง
+              <br />พัฒนาApplication ของเราให้สามารถเชื่อมต่อกับ Platform อื่นๆ
+              ได้อย่าง<br />
+              ต่อเนื่อง
+            </h1>
+          </div>
+          <a href="#" class="flex pt-8">
+            <div class="box-4 rounded-full px-5 py-2">
+              <h1 class="f-16 font-semibold text-blue-600">สมัครสมาชิก</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-footer">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2">
+          <div class="mt-20 flex items-center">
+            <div class="">
+              <img src="assets/footer-logo.png" alt="" />
+            </div>
+            <div class="ps-8">
+              <h1 class="f-14 font-normal text-white">
+                บริษัท สมาร์ทบล็อคเทค จำกัด <br />77/39 ชั้น12 ห้อง12D
+                อาคารสินสาธรทาวเวอร์ ถ.กรุงธนบุรี<br />
+                แขวงคลองต้นไทร เขตคลองสาน กทม. 10600
+              </h1>
+              <a href="#" class="flex items-center pt-5">
+                <div class="">
+                  <img src="assets/ant-design_phone-filled.svg" alt="" />
+                </div>
+                <h1 class="f-14 ps-2 font-normal text-white underline">
+                  (02) 438 1668
+                </h1>
+              </a>
+              <a href="#" class="flex items-center pt-2">
+                <div class="">
+                  <img src="assets/dashicons_email.svg" alt="" />
+                </div>
+                <h1 class="f-14 ps-2 font-normal text-white underline">
+                  support@chatnshops.com
+                </h1>
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-20 flex items-center">
+            <div class="">
+              <h1 class="f-18 font-medium text-white">ความเป็นส่วนตัว</h1>
+              <h1 class="f-14 pt-2 font-normal text-white">
+                ข้อกำหนดและเงื่อนไข
+              </h1>
+              <h1 class="f-14 pt-2 font-normal text-white">
+                นโยบายความเป็นส่วนตัว
+              </h1>
+              <h1 class="f-18 pt-5 font-medium text-white">ติดตามเรา</h1>
+              <div class="flex pt-2">
+                <a href="#"><img src="assets/image 59.svg" alt="" /></a>
+                <a href="#" class="ps-2"
+                  ><img src="assets/image 60.svg" alt=""
+                /></a>
+                <a href="#" class="ps-2"
+                  ><img src="assets/image 61.svg" alt=""
+                /></a>
+                <a href="#" class="ps-2">
+                  <img src="assets/image 62.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="ps-5">
+              <img src="assets/image 63.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 flex justify-center">
+          <h1 class="f-16 font-normal text-white">
+            © Chatnshops Company. 2023 — All rights reserved.
+          </h1>
+        </div>
       </div>
     </div>
 
