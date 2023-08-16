@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+
+    <!-- CSS / Tailwind -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="text-white py-2 text-center border-b-2">
+      <a href="index.html">
+        <img
+          src="assets/navigation-logo-img-black.svg"
+          alt="Logo"
+          class="mx-auto"
+      /></a>
+    </nav>
+    <div class="lg:w-2/6 lg:px-0 px-12 mx-auto mt-20">
+      <h2 class="text-3xl text-center font-semibold mb-4">
+        ลงทะเบียนด้วยที่อยู่อีเมลของคุณ
+      </h2>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block font-medium mb-1"
+            >ชื่อ-นามสกุล<span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full px-5 py-3 border rounded-lg"
+            placeholder=""
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block font-medium mb-1"
+            >อีเมล<span class="text-red-500">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full px-5 py-3 border rounded-lg"
+            placeholder="เช่น name@example.com"
+          />
+        </div>
+        <div class="mb-4 relative">
+          <label for="password" class="block font-medium mb-1"
+            >รหัสผ่าน<span class="text-red-500">*</span></label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full px-5 py-3 border rounded-lg"
+            placeholder="ป้อนรหัสผ่านของคุณ"
+          />
+          <span
+            class="absolute right-3 top-2/4 cursor-pointer"
+            id="togglePassword"
+          >
+            <img src="assets/Password hide.svg" alt="" />
+          </span>
+        </div>
+        <div class="password-require text-sm text-gray-500 mb-5">
+          <ul class="list-disc">
+            <li class="list-none my-2">รหัสผ่านของคุณต้องมี:</li>
+            <li class="text-green-500 my-2">
+              ใช้อักขระตั้งแต่ 8 ตัวขึ้นไปโดยมีตัวอักษร ตัวเลข
+              และสัญลักษณ์ผสมกัน
+            </li>
+            <li class="text-green-500 my-2">
+              ยอมรับรหัสผ่านของคุณ หรือแก้ไขเพื่อความปลอดภัยที่มากขึ้น
+            </li>
+            <li class="list-none my-2">
+              ความแข็งแกร่งของรหัสผ่าน:
+              <div class="flex my-2">
+                <div class="pt-1 me-1 w-1/4 bg-green-500"></div>
+                <div class="me-1 w-1/4 bg-green-500"></div>
+                <div class="me-1 w-1/4 bg-green-500"></div>
+                <div class="me-1 w-1/4 bg-green-500"></div>
+              </div>
+            </li>
+            <li class="list-none">
+              รักษาความปลอดภัยบัญชีของคุณด้วยรหัสผ่านเฉพาะที่ไม่มีชื่อ วันที่
+              และ/หรืออักขระซ้ำกัน
+            </li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <label for="confirmPassword" class="block font-medium mb-1"
+            >ยืนยันรหัสผ่าน<span class="text-red-500">*</span></label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            class="w-full px-5 py-3 border rounded-lg"
+            placeholder="ป้อนรหัสผ่านของคุณ"
+          />
+        </div>
+        <div class="password-require text-sm text-gray-500 mb-5">
+          <ul class="list-disc">
+            <li class="list-none my-2">รหัสผ่านของคุณต้องมี:</li>
+            <li class="my-2">
+              ใช้อักขระตั้งแต่ 8 ตัวขึ้นไปโดยมีตัวอักษร ตัวเลข
+              และสัญลักษณ์ผสมกัน
+            </li>
+            <li class="my-2">
+              <span class="text-blue-600">ยอมรับรหัสผ่านของคุณ </span
+              >หรือแก้ไขเพื่อความปลอดภัยที่มากขึ้น
+            </li>
+            <li class="list-none my-2">
+              ความแข็งแกร่งของรหัสผ่าน:
+              <div class="flex my-2">
+                <div class="pt-1 me-1 w-1/4 bg-gray-500"></div>
+                <div class="me-1 w-1/4 bg-gray-500"></div>
+                <div class="me-1 w-1/4 bg-gray-500"></div>
+                <div class="me-1 w-1/4 bg-gray-500"></div>
+              </div>
+            </li>
+            <li class="list-none">
+              รักษาความปลอดภัยบัญชีของคุณด้วยรหัสผ่านเฉพาะที่ไม่มีชื่อ วันที่
+              และ/หรืออักขระซ้ำกัน
+            </li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <label for="category1" class="block font-medium mb-1"
+            >ประเภทสินค้าที่ขาย<span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="category1"
+            name="category1"
+            class="w-full px-5 py-3 border rounded-lg"
+            placeholder=""
+          />
+        </div>
+        <div class="mb-4">
+          <label for="category2" class="block font-medium mb-1"
+            >จำนวนชิ้นที่จัดส่ง/วัน<span class="text-red-500">*</span></label
+          >
+          <input
+            type="number"
+            id="category2"
+            name="category2"
+            class="w-full px-5 py-3 border rounded-lg"
+            placeholder="0"
+          />
+        </div>
+        <div class="mb-4">
+          <div class="flex justify-between items-center">
+            <label for="captcha" class="font-semibold">3 x 9 = </label>
+            <input
+              type="text"
+              id="captcha"
+              name="captcha"
+              class="w-10/12 px-5 py-3 border rounded-lg"
+              placeholder="Enter captcha"
+            />
+          </div>
+        </div>
+        <div class="my-6">
+          <input type="checkbox" id="agree" name="agree" class="mr-2" />
+          <label for="agree" class="text-gray-600 text-sm"
+            >การสร้างบัญชีแสดงว่าคุณยอมรับ
+            <a href="#" class="font-semibold underline">ข้อกำหนดการใช้งาน</a>
+            และ
+            <a href="#" class="font-semibold underline">
+              นโยบายความเป็นส่วนตัว</a
+            ></label
+          >
+        </div>
+        <button
+          type="submit"
+          class="w-full gradient-1 text-white py-4 rounded-full text-lg"
+        >
+          สมัครสมาชิก
+        </button>
+      </form>
+      <div class="mt-4">
+        <p class="text-center font-semibold text-lg text-gray-600">OR</p>
+        <button
+          class="w-full mt-2 bg-white border-2 py-3 rounded-full shadow-xl flex justify-center items-center"
+        >
+          <div class="svg-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="33"
+              height="32"
+              viewBox="0 0 33 32"
+              fill="none"
+            >
+              <path
+                d="M32.5002 16C32.5002 7.206 25.3712 0.0770702 16.5772 0.0770702C7.78323 0.0770702 0.654297 7.206 0.654297 16C0.654297 23.9476 6.47708 30.535 14.0893 31.7295V20.6027H10.0463V16H14.0893V12.492C14.0893 8.5013 16.4664 6.29696 20.1036 6.29696C21.8457 6.29696 23.6679 6.60796 23.6679 6.60796V10.5265H21.6601C19.682 10.5265 19.0652 11.7539 19.0652 13.0131V16H23.4813L22.7753 20.6027H19.0652V31.7295C26.6774 30.535 32.5002 23.9476 32.5002 16Z"
+                fill="#1877F2"
+              />
+            </svg>
+          </div>
+          <p class="font-semibold text-md px-5">Sign up with Facebook</p>
+        </button>
+      </div>
+
+      <div class="my-12 text-center">
+        <p class="text-gray-600">
+          มีบัญชีอยู่แล้ว?
+          <a href="Login.html" class="text-blue-600 font-semibold"
+            >เข้าสู่ระบบ
+          </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

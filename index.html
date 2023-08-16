@@ -49,7 +49,7 @@
       >
         <div class="flex items-center w-1/2">
           <div class="logo-container">
-            <img src="assets/navigation-logo-img.svg" alt="" />
+            <img src="assets/navigation-logo-img-white.svg" alt="" />
           </div>
           <ul
             class="xl:flex hidden grow justify-between ms-12 text-white font-medium"
@@ -90,6 +90,7 @@
         </div>
       </nav>
 
+      <div class="moblie-nav"></div>
       <div class="lg:container mx-auto text-center mt-16">
         <h1 class="font-bold text-white" style="font-size: 3.5rem">
           ระบบ <span class="text-red-500">Liveสด</span> ดูดคอมเมนต์
@@ -253,10 +254,13 @@
     </div>
 
     <!---->
-    <div class="container mx-auto">
-      <div class="grid grid-cols-2">
+    <div class="container relative mx-auto">
+      <div class="line absolute xl:block hidden top-32 left-24 -z-50">
+        <img src="assets/line.png" alt="" />
+      </div>
+      <div class="grid lg:grid-cols-2">
         <div class="pt-24">
-          <div class="flex items-center">
+          <div class="md:flex items-center hidden">
             <div class="box-1 rounded-full p-3">
               <img src="assets/happy 1.svg" alt="" />
             </div>
@@ -283,12 +287,12 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 pt-10">
-        <div class="">
+      <div class="grid lg:grid-cols-2 pt-10">
+        <div class="lg:block hidden">
           <img src="assets/block2 Image Animation.png" alt="" />
         </div>
-        <div class="pt-24">
-          <div class="flex items-center">
+        <div class="pt-24 flex flex-col lg:items-end">
+          <div class="md:flex hidden items-center self-start ms-20">
             <div class="box-2 rounded-full p-3">
               <img src="assets/happy 1.svg" alt="" />
             </div>
@@ -311,13 +315,16 @@
               <br />การขายสินค้า และดึงข้อมูลออกมาได้ด้วยตนเอง
             </h1>
           </div>
+          <div class="block lg:hidden">
+            <img src="assets/block2 Image Animation.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-2 block-3 ps-40 pt-10">
-      <div class="pt-10">
-        <div class="flex items-center">
+    <div class="grid lg:grid-cols-2 block-3 xl:ps-56 lg:ps-12 pt-10 mt-36">
+      <div class="pt-10 lg:px-0 px-24">
+        <div class="md:flex items-center hidden">
           <div class="box-3 rounded-full p-3">
             <img src="assets/happy 1.svg" alt="" />
           </div>
@@ -331,7 +338,8 @@
         </div>
         <div class="pt-5">
           <h1 class="f-32 font-semibold">
-            ระบบหลังบ้าน <br />จัดการคลังสินค้าและสรุป <br />รายงานการขาย
+            เชื่อมต่อระบบขนส่งไว้ภายในแอพเดียว <br />จะสร้างออเดอร์
+            หรือเรียกขนส่งก็ทำได้ <br />ไม่ต้องวุ่นวาย
           </h1>
           <h1 class="f-18 pt-5 font-normal text-gray-400">
             Chatnshops เชื่อมต่อกับระบบขนส่งชั้นนำในประเทศ
@@ -340,6 +348,11 @@
             <br />กำไรเพียบ
           </h1>
         </div>
+        <img
+          src="assets/block3 Image Animation.png"
+          class="lg:hidden block"
+          alt=""
+        />
       </div>
     </div>
     <div class="mt-28 bg-app">
@@ -371,6 +384,573 @@
       </div>
     </div>
 
+    <div class="package my-24">
+      <div class="text-5xl font-bold text-center">
+        เลือกแพคเกจที่เหมาะสม <br />
+        กับร้านของคุณ
+      </div>
+      <div class="carousel mt-12">
+        <div class="carousel-container">
+          <div class="carousel-item carousel-item-1" data-index="1">
+            <div
+              class="border-4 bg-white border-blue-600 rounded-[35px] shadow-blue py-6 px-4"
+            >
+              <div class="flex flex-col">
+                <p class="text-dark font-semibold text-xs ms-5 pt-4">
+                  ทดลองใช้งาน Free
+                </p>
+                <h1 class="text-blue-600 text-5xl font-bold text-center mt-6">
+                  15 วัน
+                </h1>
+
+                <div
+                  class="line w-2 h-8 bg-blue-600 rounded-full self-end"
+                ></div>
+
+                <p class="text-center text-blue-600 border-y-2 py-2 mt-8">
+                  รายละเอียดเเพคเกจ
+                </p>
+
+                <ul class="mt-5 leading-8 text-sm border-b-2 pb-5">
+                  <li class="flex items-center text-red">
+                    <img src="assets/x-03.png" alt="" />เชื่อมต่อเพจ : ไม่จำกัด
+                  </li>
+                  <li class="flex items-center text-red">
+                    <img src="assets/x-03.png" alt="" />ส่งพัสดุในราคาพิเศษ
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />ไลฟ์สดได้ครั้งละ
+                    :
+                    <span class="text-blue-600 ps-1"> 1 เพจ</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    Facebook Pages - Subscribers/Page :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    Recurring Notification :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    ตอบกลับคอมเมนต์ :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    เพิ่มรูปภาพ / และสินค้าในคลังได้ :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    จำนวนคำสั่งซื้อ :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    ปริ้นใบออเดอร์ / ใบปะหน้า :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02blue.png" alt="" />
+                    <p></p>
+                    Export ข้อมูลขายเป็น Excel :
+                    <span class="text-blue-600 ps-1">ไม่จำกัด</span>
+                  </li>
+                </ul>
+
+                <p class="pt-6 text-blue-600 text-xs text-center">
+                  ทดลองใช้ผลิตภัณฑ์ทั้งหมดของ Chatnshops ฟรี
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 py-3 text-center text-white rounded-full mt-5"
+                >
+                  เริ่มต้นใช้งาน
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-2" data-index="2">
+            <div
+              class="border-4 bg-white border-green-500 rounded-[35px] shadow-green py-4 px-4"
+            >
+              <div class="flex flex-col">
+                <p class="text-dark font-semibold text-xs ms-5 pt-4">
+                  เเบบมีเงื่อนไขบริการ
+                </p>
+                <h1 class="text-green-700 text-5xl font-bold text-center mt-6">
+                  ฟรี <br />ตลอดชีพ
+                </h1>
+
+                <div
+                  class="line w-2 h-8 relative -top-8 bg-green-700 rounded-full self-end"
+                ></div>
+
+                <p class="text-center text-green-700 border-y-2 py-2">
+                  รายละเอียดเเพคเกจ
+                </p>
+
+                <ul class="mt-5 leading-8 text-sm border-b-2 pb-5">
+                  <li class="flex items-center text-green-700">
+                    <img src="assets/check-02green.png" alt="" />เชื่อมต่อเพจ :
+                    ไม่จำกัด
+                  </li>
+
+                  <li class="flex items-center">
+                    <img
+                      src="assets/check-02green.png"
+                      alt=""
+                    />ไลฟ์สดได้ครั้งละ :
+                    <span class="text-green-700 ps-1"> 1 เพจ</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    Facebook Pages - Subscribers/Page :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    Recurring Notification :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    ตอบกลับคอมเมนต์ :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    เพิ่มรูปภาพ / และสินค้าในคลังได้ :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    จำนวนคำสั่งซื้อ :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    ปริ้นใบออเดอร์ / ใบปะหน้า :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02green.png" alt="" />
+                    <p></p>
+                    Export ข้อมูลขายเป็น Excel :
+                    <span class="text-green-700 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center text-green-700">
+                    <img
+                      src="assets/check-02green.png"
+                      alt=""
+                    />ส่งพัสดุในราคาพิเศษ
+                  </li>
+                </ul>
+
+                <p class="pt-6 text-green-700 text-xs text-center">
+                  ติดต่อเจ้าหน้าที่ เพื่อรับรายละเอียดเพิ่มเติม
+                </p>
+                <a
+                  href="#"
+                  class="border-2 border-green-600 py-3 text-green-700 font-semibold text-center rounded-full mt-5"
+                >
+                  ติดต่อเจ้าหน้าที่
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-3" data-index="3">
+            <div
+              class="border-4 bg-white border-orange-400 rounded-[35px] shadow-orange py-4 px-4"
+            >
+              <div class="flex flex-col">
+                <p class="text-dark font-semibold text-xs ms-5 pt-4">
+                  รายเดือน
+                </p>
+                <p class="line-through text-gray-400 font-light mt-6 ms-16">
+                  THB 1,490
+                </p>
+                <h1 class="text-orange text-5xl font-bold text-center">
+                  THB 950
+                </h1>
+
+                <div
+                  class="line w-2 h-8 relative -top-8 bg-orange-400 rounded-full self-end"
+                ></div>
+
+                <p class="text-center text-orange border-y-2 py-2">
+                  รายละเอียดเเพคเกจ
+                </p>
+
+                <ul class="mt-5 leading-8 text-sm border-b-2 pb-5">
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />เชื่อมต่อเพจ :
+                    <span class="text-orange">ไม่จำกัด</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img
+                      src="assets/check-02orange.png"
+                      alt=""
+                    />ไลฟ์สดได้ครั้งละ :
+                    <span class="text-orange ps-1"> 1 เพจ</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    Facebook Pages - Subscribers/Page :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    Recurring Notification :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    ตอบกลับคอมเมนต์ :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    เพิ่มรูปภาพ / และสินค้าในคลังได้ :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    จำนวนคำสั่งซื้อ :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    ปริ้นใบออเดอร์ / ใบปะหน้า :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    Export ข้อมูลขายเป็น Excel :
+                    <span class="text-orange ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center text-orange">
+                    <img
+                      src="assets/check-02orange.png"
+                      alt=""
+                    />ส่งพัสดุในราคาพิเศษ
+                  </li>
+                </ul>
+
+                <p class="pt-6 text-orange text-xs text-center">
+                  ติดต่อเจ้าหน้าที่ เพื่อรับรายละเอียดเพิ่มเติม
+                </p>
+                <a
+                  href="#"
+                  class="border-2 border-orange-500 py-3 text-orange font-semibold text-center rounded-full mt-5"
+                >
+                  ติดต่อเจ้าหน้าที่
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-4" data-index="4">
+            <div
+              class="border-4 bg-white border-red-400 rounded-[35px] shadow-red py-4 px-4"
+            >
+              <div class="flex flex-col">
+                <p class="text-dark font-semibold text-xs ms-5 pt-4">รายปี</p>
+                <p class="line-through text-gray-400 font-light mt-6 ms-16">
+                  THB 17,900
+                </p>
+                <h1 class="text-red-1 text-5xl font-bold text-center">
+                  THB 9,500
+                </h1>
+                <p class="text-gray-400 text-xs text-center">
+                  ( 792 ต่อเดือน )
+                </p>
+                <p class="text-red-500 text-xs font-medium text-center">
+                  *ราคาที่แสดงยังไม่รวมภาษีมูลค่าเพิ่ม
+                </p>
+                <div
+                  class="line w-2 h-8 relative -top-8 bg-red-400 rounded-full self-end"
+                ></div>
+
+                <p class="text-center text-red-1 border-y-2 py-2">
+                  รายละเอียดเเพคเกจ
+                </p>
+
+                <ul class="mt-5 leading-8 text-sm border-b-2 pb-5">
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />เชื่อมต่อเพจ :
+                    <span class="text-red-1">ไม่จำกัด</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img
+                      src="assets/check-02orange.png"
+                      alt=""
+                    />ไลฟ์สดได้ครั้งละ :
+                    <span class="text-red-1 ps-1"> 1 เพจ</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    Facebook Pages - Subscribers/Page :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    Recurring Notification :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    ตอบกลับคอมเมนต์ :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    เพิ่มรูปภาพ / และสินค้าในคลังได้ :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    จำนวนคำสั่งซื้อ :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    ปริ้นใบออเดอร์ / ใบปะหน้า :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="assets/check-02orange.png" alt="" />
+                    <p></p>
+                    Export ข้อมูลขายเป็น Excel :
+                    <span class="text-red-1 ps-1">ไม่จำกัด</span>
+                  </li>
+                  <li class="flex items-center text-red-1">
+                    <img
+                      src="assets/check-02orange.png"
+                      alt=""
+                    />ส่งพัสดุในราคาพิเศษ
+                  </li>
+                </ul>
+
+                <p class="pt-6 text-red-1 text-xs text-center">
+                  ติดต่อเจ้าหน้าที่ เพื่อรับรายละเอียดเพิ่มเติม
+                </p>
+                <a
+                  href="#"
+                  class="border-2 border-red-500 py-3 text-red-1 font-semibold text-center rounded-full mt-5"
+                >
+                  ติดต่อเจ้าหน้าที่
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-controls-previous">
+              <img src="assets/arrow-left-circle.png" alt="" />
+            </div>
+            <div class="carousel-controls-next">
+              <img src="assets/arrow-right-circle.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <ul class="carousel-"></ul>
+      </div>
+    </div>
+
+    <div class="question xl:container xl:mx-0 mx-5 my-24">
+      <div class="text-center text-4xl font-bold mb-24">คำถามที่พบบ่อย</div>
+
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>Chatnshops ทำอะไรได้บ้าง</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            Chatnshops สามารถ Liveสด จัดการคลังสินค้าออนไลน์ ช่วยตอบกลับ
+            คอมเมนต์แบบอัตโนมัติ คอนเฟิร์มออเดอร์ผ่านทาง Messenger
+            และสร้างรายการขนส่งได้ภายในที่เดียว
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>Chatnshops เหมาะกับใคร</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            เหมาะกับพ่อค้าแม่ค้าที่ขายสินค้าออนไลน์ และมีการ Live เพื่อขายสินค้า
+            อยู่เป็นประจำ ช่วยลดขั้นตอนในการจัดการออเดอร์ และบริหารคลังสินค้า
+            ได้อย่างสะดวกและรวดเร็ว
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>มีค่าใช้จ่ายหรือไม่?</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            Chatnshops สามารถทดลองใช้ได้ฟรี 15 วัน หลังจากนั้นท่านจะต้อง
+            สั่งซื้อ Package ซึ่งเรามีให้เลือกหลากหลาย หรือหากท่านสนใจเป็น
+            Partner กับเราก็สามารถติดต่อเราได้โดยตรง เพื่อรับข้อเสนอสุดพิเศษ
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>มีขนส่งรองรับไหม</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            เรามีขนส่ง Ninjavan รองรับในระบบพร้อมค่าส่งราคาพิเศษ เพียงแค่ท่าน
+            สมัคร Package กับเรา เราจะเชื่อมต่อไปยังระบบหลังบ้านของ Account
+            ท่านโดยทันที หรือหากท่านต้องการใช้และเชื่อมขนส่งอื่น ๆ
+            ที่ท่านต้องการเองก็สามารถทำได้เช่นกัน
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>มีระบบตอบแชทอัตโนมัติไหม?</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            ระบบของเราจะทำการยืนยันออเดอร์ของลูกค้าผ่านทาง Messenger
+            เพียงเท่านั้น ไม่สามารถสร้าง Auto Messeger คุยกับลูกค้าได้
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>มีระบบตอบกลับคอมเมนต์ไหม?</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            ระบบของเราสามารถตอบกลับคอมเมนต์ที่ Confirm
+            การสั่งซื้อสินค้าผ่านคอมเมนต์ในโพสต์ต่าง ๆ รวมไปถึงการ Live สดได้แบบ
+            Real-Time พร้อมสรุปค่าใช้จ่ายทั้งหมดผ่านทาง Messenger
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>มีวิธีการใช้งานไหม?</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            สามารถดูวิธีใช้งานทั้งแบบ
+            <a
+              href="#"
+              class="rounded-full bg-blue-600 text-white mx-2 py-1 px-6"
+              >pdf</a
+            >
+            และ
+            <a
+              href="#"
+              class="rounded-full bg-blue-600 text-white mx-2 py-1 px-6"
+              >VDO</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="border-y py-6">
+        <button
+          class="toggle-button font-medium flex w-full items-center justify-between py-4"
+        >
+          <p>ช่องทางในการติดต่อ</p>
+          <img src="assets/chevron-down.png" alt="" />
+        </button>
+        <div class="collapse-content hidden">
+          <p class="text-gray-400 lg:pe-32 pt-8">
+            สามารถติดต่อเราได้ที่ Facebook Fanpage
+            <a
+              href="#"
+              class="rounded-full bg-blue-600 text-white mx-2 py-1 px-6"
+              >Facebook</a
+            >
+            หรือ เบอร์โทร อีเมล และ Line@
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2">
+      <div class="content-1 relative">
+        <div class="background-gif w-full h-full"></div>
+        <h1
+          class="text-white text-4xl font font-semibold px-12 absolute top-1/2"
+        >
+          ทดลองใช้ระบบ <span class="text-6xl"> Chatnshops</span> <br />
+          ตอนนี้! รับฟรีแพ็คเกจ <br />
+          ทดลอง 15 วัน
+        </h1>
+        <a
+          href="Register.html"
+          class="bg-blue-600 text-white absolute bottom-[15%] mx-12 px-12 rounded-full py-3"
+          >สมัครสมาชิกฟรี</a
+        >
+      </div>
+      <div class="content-2 relative">
+        <img src="assets/content-bg-2.png" class="w-full -z-10" alt="" />
+        <h1
+          class="text-white text-4xl font font-semibold px-12 absolute top-24"
+        >
+          มาร่วมเป็นส่วนหนึ่งกับเรา <br />
+          ให้เราดูแลและต่อยอดธุรกิจของคุณ
+          โดยไม่มีค่าใช้จ่ายแอบแฝงหรือการเรียกเก็บเงินเพิ่มเติม
+        </h1>
+      </div>
+    </div>
     <div class="bg-footer">
       <div class="container mx-auto">
         <div class="grid grid-cols-2">
@@ -432,7 +1012,7 @@
           </div>
         </div>
 
-        <div class="mt-16 flex justify-center">
+        <div class="mt-16 flex justify-center pb-5">
           <h1 class="f-16 font-normal text-white">
             © Chatnshops Company. 2023 — All rights reserved.
           </h1>
@@ -442,10 +1022,18 @@
 
     <!--script-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       $(document).ready(function () {
         $("#toggleButton").click(function () {
           $("#collapseContent").slideToggle("fast");
+        });
+        $(".toggle-button").click(function () {
+          $(this).toggleClass("text-blue-600");
+          $(this).next(".collapse-content").slideToggle("fast");
+        });
+        $("#toggleButton").click(function () {
+          $("#nav").slideToggle("fast");
         });
       });
     </script>
