@@ -3,6 +3,6 @@
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "build:css": "tailwindcss build css/styles.css -o dist/styles.css"
+    "build:css": "tailwindcss build -i css/style.css -o dist/style.css"
   }
 }

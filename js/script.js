@@ -45,6 +45,27 @@ class Carousel {
     });
   }
 
+  attachSwipeListeners() {
+    let touchStartX = 0;
+
+    this.carouselContainer.addEventListener("touchstart", (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+
+    this.carouselContainer.addEventListener("touchend", (e) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const swipeDistance = touchEndX - touchStartX;
+
+      if (swipeDistance > 50) {
+        this.setCurrentState(
+          document.querySelector(".carousel-controls-previous")
+        );
+      } else if (swipeDistance < -50) {
+        this.setCurrentState(document.querySelector(".carousel-controls-next"));
+      }
+    });
+  }
+
   useControls() {
     const triggers = [...carouselControlsContainer.childNodes];
     triggers.forEach((control) => {
@@ -53,6 +74,7 @@ class Carousel {
         this.setCurrentState(control);
       });
     });
+    this.attachSwipeListeners();
   }
 
   updatePagination(currentIndex) {
