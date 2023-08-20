@@ -5,97 +5,7 @@
 body {
   font-family: "Prompt", sans-serif;
 }
-/*+++++++++++++++++++++++++++++*/
-/*+++++++++ typography +++++++*/
-/*+++++++++++++++++++++++++++++*/
 
-.head-1 {
-  font-size: 3.5rem;
-  line-height: 130%;
-}
-
-.head-2 {
-  font-size: 3rem;
-  line-height: 130%;
-}
-
-.head-3 {
-  font-size: 2rem;
-  line-height: 140%;
-}
-
-.head-4 {
-  font-size: 1.5rem;
-  line-height: 145%;
-}
-
-.head-5 {
-  font-size: 1.313rem;
-  line-height: 150%;
-}
-
-.head-6 {
-  font-size: 1rem;
-  line-height: 155%;
-}
-
-.body-1 {
-  font-size: 1.125rem;
-  line-height: 164%;
-}
-
-.body-2 {
-  font-size: 1rem;
-  line-height: 164%;
-}
-
-.body-3 {
-  font-size: 0.875rem;
-  line-height: 164%;
-}
-
-.body-4 {
-  font-size: 0.75rem;
-  line-height: 158%;
-}
-
-.span-1 {
-  font-size: 0.933rem;
-  line-height: 142%;
-}
-
-.span-2 {
-  font-size: 1.125rem;
-  line-height: 142%;
-}
-@media (min-width: 744px) and (max-width: 1000px) {
-}
-@media (max-width: 1000px) {
-  .head-1,
-  .head-2 {
-    font-size: 3rem !important;
-  }
-  .banner .body-1 {
-    font-size: 0.933rem !important;
-  }
-
-  .content1 .body-2 {
-    font-size: 0.875rem !important;
-  }
-  .head-3 {
-    font-size: 1rem !important;
-  }
-  .content1 .body-1 {
-    font-size: 0.875rem !important;
-  }
-
-  .connect .head-2 {
-    font-size: 1.25rem !important;
-  }
-  .connect .body-1 {
-    font-size: 1rem !important;
-  }
-}
 /*+++++++++++++++++++++++++++++*/
 /*+++++++++ Banner ++++++++*/
 /*+++++++++++++++++++++++++++++*/
@@ -189,13 +99,14 @@ body {
   position: absolute;
   transition: all 0.5s ease-in-out;
   z-index: 0;
+  width: 40%;
   border-radius: 15px;
 }
 
 .carousel-item-2 {
   left: 70%;
   opacity: 4;
-  transform: translateX(-50%) scale(0.8);
+  transform: translateX(-50%);
 }
 
 .carousel-item-2,
@@ -203,7 +114,19 @@ body {
 .carousel-item-4 {
   opacity: 0.5;
   z-index: 1;
-  filter: grayscale();
+}
+
+.carousel-item-2 *,
+.carousel-item-3 *,
+.carousel-item-4 * {
+  color: #192962 !important;
+  border-color: #192962 !important;
+}
+
+.carousel-item-2 .hide,
+.carousel-item-3 .hide,
+.carousel-item-4 .hide {
+  display: none;
 }
 
 .carousel-item-2 .border-4,
@@ -213,7 +136,7 @@ body {
 }
 .carousel-item-4 {
   left: 30%;
-  transform: translateX(-50%) scale(0.8);
+  transform: translateX(-50%);
 }
 
 .carousel-item-1 {
@@ -239,7 +162,7 @@ body {
   z-index: 0;
   opacity: 0;
   left: 50%;
-  transform: translateX(-50%) scale(0.8);
+  transform: translateX(-50%);
 }
 
 .carousel-controls {
@@ -302,11 +225,19 @@ body {
   background-color: #000;
 }
 
+@media (min-width: 764px) and (max-width: 1024px) {
+  .carousel-item {
+    width: fit-content;
+  }
+}
 @media (max-width: 764px) {
   .carousel-item-2,
   .carousel-item-3,
   .carousel-item-4 {
     opacity: 0 !important;
+  }
+  .carousel-item {
+    width: 80%;
   }
   .carousel-controls {
     display: none !important;
@@ -330,20 +261,26 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+.bg-app .bg {
+  background-image: url("../assets/Phone mock up@2x.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+@media (max-width: 772px) {
   .block-3 {
     background: none;
   }
 }
-
-.background-gif video {
-  width: 120%;
+.content-block {
+  height: 700px;
+}
+.content-block .background-gif {
+  height: 700px;
 }
 
 .background-gif::after {
   position: absolute;
   top: 0;
-
   content: "";
   width: 100%;
   height: 100%;
@@ -403,4 +340,17 @@ body {
 /*question*/
 .question {
   background: rgb(255, 255, 255) 10%;
+}
+
+.togglebutton,
+.svg-dropdown {
+  transition: transform 1s ease;
+}
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 1s ease;
+}
+
+.shadow-nav {
+  box-shadow: 0px 0px 15px 10px rgb(0, 0, 0, 0.1);
 }

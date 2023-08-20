@@ -1,0 +1,183 @@
+/*+++++++++++++++++++++++++++++*/
+/*+++++++++ typography +++++++*/
+/*+++++++++++++++++++++++++++++*/
+
+.head-1 {
+  font-size: 3.5rem;
+  line-height: 130%;
+}
+
+.head-2 {
+  font-size: 3rem;
+  line-height: 130%;
+}
+
+.head-3 {
+  font-size: 2rem;
+  line-height: 140%;
+}
+
+.head-4 {
+  font-size: 1.5rem;
+  line-height: 145%;
+}
+
+.head-5 {
+  font-size: 1.313rem;
+  line-height: 150%;
+}
+
+.head-6 {
+  font-size: 1rem;
+  line-height: 155%;
+}
+
+.body-1 {
+  font-size: 1.125rem;
+  line-height: 164%;
+}
+
+.body-2 {
+  font-size: 1rem;
+  line-height: 164%;
+}
+
+.body-3 {
+  font-size: 0.875rem;
+  line-height: 164%;
+}
+
+.body-4 {
+  font-size: 0.75rem;
+  line-height: 158%;
+}
+
+.span-1 {
+  font-size: 0.933rem;
+  line-height: 142%;
+}
+
+.span-2 {
+  font-size: 1.125rem;
+  line-height: 142%;
+}
+
+@media (min-width: 744px) and (max-width: 1024px) {
+  /* Banner Styles */
+  .banner .head1 {
+    font-size: 1.313rem !important;
+  }
+
+  .banner .body-1 {
+    font-size: 0.875 !important;
+  }
+  /* About Styles */
+  .about .head-2 {
+    font-size: 1rem !important;
+  }
+
+  .about .body-1 {
+    font-size: 0.75rem !important;
+  }
+
+  /* Content1 Styles */
+  .content1 .head-3 {
+    font-size: 1rem !important;
+  }
+
+  .content1 .body-2,
+  .content1 .body-1 {
+    font-size: 0.875rem !important;
+  }
+
+  /* Connect Styles */
+  .connect .head-1 {
+    font-size: 1.5rem !important;
+  }
+  .connect .head-2 {
+    font-size: 0.875rem !important;
+  }
+
+  .connect .body-1 {
+    font-size: 1rem !important;
+  }
+
+  /* Package Styles */
+  .package .head-1 {
+    font-size: 2rem !important;
+  }
+
+  .package .carousel .head-1 {
+    font-size: 3rem !important;
+  }
+
+  .package .carousel .body-3 {
+    font-size: 0.75rem;
+  }
+
+  /* QA Styles */
+  .question .head-2 {
+    font-size: 2rem !important;
+  }
+
+  .question .head-5 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 744px) {
+  .banner .head1 {
+    font-size: 2rem !important;
+  }
+
+  .banner .body-1 {
+    font-size: 0.933rem !important;
+  }
+
+  /* Content1 Styles */
+  .content1 .head-3 {
+    font-size: 1.313rem !important;
+  }
+
+  .content1 .body-2,
+  .content1 .body-1 {
+    font-size: 0.875rem !important;
+  }
+
+  /* Connect Styles */
+  .connect .head-1,
+  .connect .head-2 {
+    font-size: 2rem !important;
+  }
+
+  .connect .body-1 {
+    font-size: 1rem !important;
+  }
+
+  /* About Styles */
+  .about .head-2 {
+    font-size: 2rem !important;
+  }
+
+  .about .body-1 {
+    font-size: 1rem !important;
+  }
+
+  /* Package Styles */
+  .package .head-1 {
+    font-size: 2rem !important;
+  }
+
+  .package .carousel .head-1 {
+    font-size: 3.5rem !important;
+  }
+
+  /* QA Styles */
+  .question .head-2 {
+    font-size: 2rem !important;
+  }
+
+  .question .head-5 {
+    font-size: 1rem !important;
+  }
+}
