@@ -60,6 +60,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     const navbar = $(".navbar");
     const logoImg = $(".logo-container img");
+    const mobileNav = $(".navToggleButton img");
     const content = $(".about");
     const svg = $(".svg-dropdown svg path");
     if ($(this).scrollTop() > content.offset().top - 200) {
@@ -67,12 +68,14 @@ $(document).ready(function () {
       navbar.removeClass("text-white");
       svg.addClass("stroke-black");
       logoImg.attr("src", "assets/navigation-logo-img-black.svg");
+      mobileNav.attr("src", "assets/bar3-black.svg");
     } else {
       navbar.removeClass("fixed bg-white py-4 shadow");
       navbar.addClass("text-white");
       svg.removeClass("stroke-black");
 
       logoImg.attr("src", "assets/navigation-logo-img-white.svg");
+      mobileNav.attr("src", "assets/bars-3-bottom-right.png");
     }
   });
 });

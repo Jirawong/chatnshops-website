@@ -92,10 +92,10 @@
 
   /* Connect Styles */
   .connect .head-1 {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
   .connect .head-2 {
-    font-size: 0.875rem !important;
+    font-size: 2rem !important;
   }
 
   .connect .body-1 {
@@ -126,7 +126,7 @@
 }
 
 @media (max-width: 744px) {
-  .banner .head1 {
+  .banner .head-1 {
     font-size: 2rem !important;
   }
 

@@ -9,7 +9,6 @@ module.exports = {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
-        "3xl": "2000px",
       },
     },
     container: {
@@ -17,8 +16,8 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "2rem",
         lg: "2rem",
-        xl: "5rem",
-        "2xl": "10rem",
+        xl: "4rem",
+        "2xl": "7rem",
       },
     },
     colors: {

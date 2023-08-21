@@ -565,22 +565,16 @@ video {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
-    padding-right: 10rem;
-    padding-left: 10rem;
-  }
-}
-
-@media (min-width: 2000px) {
-  .container {
-    max-width: 2000px;
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 }
 
@@ -823,11 +817,6 @@ video {
           margin-inline-start: 4rem;
 }
 
-.ms-20 {
-  -webkit-margin-start: 5rem;
-          margin-inline-start: 5rem;
-}
-
 .ms-24 {
   -webkit-margin-start: 6rem;
           margin-inline-start: 6rem;
@@ -880,10 +869,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-36 {
-  margin-top: 9rem;
 }
 
 .mt-4 {
@@ -973,6 +958,10 @@ video {
 
 .w-2\/12 {
   width: 16.666667%;
+}
+
+.w-3\/12 {
+  width: 25%;
 }
 
 .w-3\/4 {
@@ -1479,6 +1468,10 @@ video {
   text-decoration-line: line-through;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-30 {
   opacity: 0.3;
 }
@@ -1769,10 +1762,9 @@ body {
     background-size: 70%;
   }
 
-  .bg-app .bg {
-    background-image: url("../assets/Phone mock up@2x.png");
-    background-size: auto 100%;
-    background-position: 70% 0;
+  .bg-connect {
+    background-image: url("../assets/Phone mock up.png");
+    background-position: 150%;
     background-repeat: no-repeat;
   }
 }
@@ -1786,6 +1778,12 @@ body {
 @media (max-width: 772px) {
   .block-3 {
     background: none;
+  }
+
+  .bg-connect {
+    background-image: url("../assets/Phone mock up.png");
+    background-position: 110%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1917,22 +1915,16 @@ body {
   @media (min-width: 1280px) {
     .lg\:container {
       max-width: 1280px;
-      padding-right: 5rem;
-      padding-left: 5rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
     }
   }
 
   @media (min-width: 1536px) {
     .lg\:container {
       max-width: 1536px;
-      padding-right: 10rem;
-      padding-left: 10rem;
-    }
-  }
-
-  @media (min-width: 2000px) {
-    .lg\:container {
-      max-width: 2000px;
+      padding-right: 7rem;
+      padding-left: 7rem;
     }
   }
 }
@@ -1969,22 +1961,16 @@ body {
   @media (min-width: 1280px) {
     .xl\:container {
       max-width: 1280px;
-      padding-right: 5rem;
-      padding-left: 5rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
     }
   }
 
   @media (min-width: 1536px) {
     .xl\:container {
       max-width: 1536px;
-      padding-right: 10rem;
-      padding-left: 10rem;
-    }
-  }
-
-  @media (min-width: 2000px) {
-    .xl\:container {
-      max-width: 2000px;
+      padding-right: 7rem;
+      padding-left: 7rem;
     }
   }
 }
@@ -2006,6 +1992,10 @@ body {
     left: 3rem;
   }
 
+  .md\:mt-36 {
+    margin-top: 9rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2020,6 +2010,10 @@ body {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
   }
 
   .md\:w-4\/6 {
@@ -2040,9 +2034,19 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ms-12 {
+    -webkit-margin-start: 3rem;
+            margin-inline-start: 3rem;
+  }
+
   .lg\:ms-16 {
     -webkit-margin-start: 4rem;
             margin-inline-start: 4rem;
+  }
+
+  .lg\:ms-20 {
+    -webkit-margin-start: 5rem;
+            margin-inline-start: 5rem;
   }
 
   .lg\:mt-0 {
@@ -2097,6 +2101,10 @@ body {
 
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:opacity-100 {
+    opacity: 1;
   }
 }
 

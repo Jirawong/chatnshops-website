@@ -23,7 +23,7 @@
   <body>
     <!-- Banner -->
 
-    <div class="cookies hidden" id="cookies">
+    <div class="cookies" id="cookies">
       <div
         class="fixed top-0 left-0 h-screen w-screen bg-slate-900 opacity-30 z-[100]"
       ></div>
@@ -85,125 +85,128 @@
       </div>
       <!--Nav Bar-->
 
-      <nav
-        class="navbar w-full flex items-center justify-between xl:container 2xl:px-24 px-5 mx-auto pt-4 top-0 text-white z-50"
-      >
-        <div class="flex items-center w-1/2">
-          <div class="logo-container">
-            <img src="assets/navigation-logo-img-white.svg" alt="" />
-          </div>
-          <ul class="xl:flex hidden grow justify-between ms-12 font-medium">
-            <li><a href="#" class="text-primary">หน้าแรก</a></li>
-            <li>
-              <a
-                href="#about"
-                class="hover:text-primary smooth-scroll duration-300 white"
-                >เกี่ยวกับเรา</a
-              >
-            </li>
-            <li class="relative">
-              <button
-                class="how-to-use toggle-button hover:text-primary flex items-center duration-300 white"
-              >
-                วิธีการใช้งาน
-                <div class="svg-dropdown">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="19"
-                    viewBox="0 0 18 19"
-                    fill="none"
+      <nav class="navbar w-full pt-4 top-0 text-white z-50">
+        <div class="container flex items-center justify-between mx-auto">
+          <div class="flex items-center w-7/12">
+            <div class="logo-container">
+              <img src="assets/navigation-logo-img-white.svg" alt="" />
+            </div>
+            <ul class="xl:flex hidden grow justify-between ms-12 font-medium">
+              <li><a href="#" class="text-primary">หน้าแรก</a></li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-primary smooth-scroll duration-300 white"
+                  >เกี่ยวกับเรา</a
+                >
+              </li>
+              <li class="relative">
+                <button
+                  class="how-to-use toggle-button hover:text-primary flex items-center duration-300 white"
+                >
+                  วิธีการใช้งาน
+                  <div class="svg-dropdown">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="19"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                    >
+                      <path
+                        d="M13.5 7.25L9 11.75L4.5 7.25"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="collapse-content absolute text-gray-900 top-12 right-0 w-52 py-3 px-3 shadow-nav hidden bg-white rounded"
+                >
+                  <a href="#" class="block hover:text-primary duration-300"
+                    >คู่มือการใช้งาน</a
                   >
-                    <path
-                      d="M13.5 7.25L9 11.75L4.5 7.25"
-                      stroke="white"
-                      stroke-width="2"
-                    />
-                  </svg>
+                  <a href="#" class="block hover:text-primary duration-300 mt-3"
+                    >วีดีโอแนะนำการใช้งาน</a
+                  >
                 </div>
+              </li>
+              <li>
+                <a
+                  href="#package"
+                  class="hover:text-primary smooth-scroll duration-300 white"
+                  >แพ็กเกจ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex xl:justify-between justify-end items-center font-semibold w-3/12"
+          >
+            <div class="lang-dropdown relative">
+              <button class="toggle-button">
+                <img src="assets/Thailand (TH).png" alt="" />
               </button>
               <div
-                class="collapse-content absolute text-gray-900 top-12 right-0 w-52 py-3 px-3 shadow-nav hidden bg-white rounded"
+                class="collapse-content absolute text-gray-900 top-8 right-0 w-36 py-3 px-3 shadow-nav hidden bg-white rounded font-normal"
               >
-                <a href="#" class="block hover:text-primary duration-300"
-                  >คู่มือการใช้งาน</a
-                >
-                <a href="#" class="block hover:text-primary duration-300 mt-3"
-                  >วีดีโอแนะนำการใช้งาน</a
-                >
+                <button href="#" class="active font-semibold flex items-center">
+                  <img src="assets/Thailand (TH).png" class="pe-2" alt="" />
+                  <span>ไทย</span>
+                  <div class="check ms-8">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.16245 13.5L2.88745 9.22501L3.9562 8.15626L7.16245 11.3625L14.0437 4.48126L15.1125 5.55001L7.16245 13.5Z"
+                        fill="#00C853"
+                      />
+                    </svg>
+                  </div>
+                </button>
+                <button href="#" class="mt-3 flex items-center">
+                  <img src="assets/US.png" class="pe-2" alt="" />
+                  <span>English</span>
+                  <div class="check ms-1 hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.16245 13.5L2.88745 9.22501L3.9562 8.15626L7.16245 11.3625L14.0437 4.48126L15.1125 5.55001L7.16245 13.5Z"
+                        fill="#00C853"
+                      />
+                    </svg>
+                  </div>
+                </button>
               </div>
-            </li>
-            <li>
-              <a
-                href="#package"
-                class="hover:text-primary smooth-scroll duration-300 white"
-                >แพ็กเกจ</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div
-          class="flex xl:justify-between justify-end items-center font-semibold w-1/5"
-        >
-          <div class="lang-dropdown relative">
-            <button class="toggle-button">
-              <img src="assets/Thailand (TH).png" alt="" />
-            </button>
-            <div
-              class="collapse-content absolute text-gray-900 top-8 right-0 w-36 py-3 px-3 shadow-nav hidden bg-white rounded font-normal"
-            >
-              <button href="#" class="active font-semibold flex items-center">
-                <img src="assets/Thailand (TH).png" class="pe-2" alt="" />
-                <span>ไทย</span>
-                <div class="check ms-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <path
-                      d="M7.16245 13.5L2.88745 9.22501L3.9562 8.15626L7.16245 11.3625L14.0437 4.48126L15.1125 5.55001L7.16245 13.5Z"
-                      fill="#00C853"
-                    />
-                  </svg>
-                </div>
-              </button>
-              <button href="#" class="mt-3 flex items-center">
-                <img src="assets/US.png" class="pe-2" alt="" />
-                <span>English</span>
-                <div class="check ms-1 hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <path
-                      d="M7.16245 13.5L2.88745 9.22501L3.9562 8.15626L7.16245 11.3625L14.0437 4.48126L15.1125 5.55001L7.16245 13.5Z"
-                      fill="#00C853"
-                    />
-                  </svg>
-                </div>
-              </button>
             </div>
-          </div>
 
-          <a
-            href="Login.html"
-            class="hover:text-primary duration-300 xl:block hidden"
-            >เข้าสู่ระบบ</a
-          >
-          <a
-            href="Register.html"
-            class="bg-primary text-white hover:bg-white hover:text-primary duration-300 py-2 px-5 rounded-full xl:block hidden"
-            >สมัครสมาชิก</a
-          >
-          <button class="xl:hidden block ms-5" id="navToggleButton">
-            <img src="assets/bars-3-bottom-right.png" class="w-10" alt="" />
-          </button>
+            <a
+              href="Login.html"
+              class="hover:text-primary duration-300 xl:block hidden"
+              >เข้าสู่ระบบ</a
+            >
+            <a
+              href="Register.html"
+              class="bg-primary text-white hover:bg-white hover:text-primary duration-300 py-2 px-5 rounded-full xl:block hidden"
+              >สมัครสมาชิก</a
+            >
+            <button
+              class="xl:hidden block ms-5 navToggleButton"
+              id="navToggleButton"
+            >
+              <img src="assets/bars-3-bottom-right.png" class="w-10" alt="" />
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -477,7 +480,7 @@
             <img src="assets/block2 Image Animation.png" alt="" />
           </div>
           <div class="pt-24 flex flex-col lg:items-end wow fadeRight">
-            <div class="md:flex hidden items-center self-start ms-20">
+            <div class="md:flex hidden items-center self-start lg:ms-20">
               <div class="box-2 rounded-full p-3">
                 <img src="assets/happy 1.svg" alt="" />
               </div>
@@ -507,52 +510,55 @@
         </div>
       </div>
 
-      <div
-        class="wow fadeRight grid lg:grid-cols-2 block-3 container pt-10 mt-36"
-      >
-        <div class="pt-10">
-          <div class="md:flex items-center hidden">
-            <div class="box-3 rounded-full p-3">
-              <img src="assets/happy 1.svg" alt="" />
+      <div class="wow fadeRight block-3 w-full pt-10 md:mt-36">
+        <div class="grid lg:grid-cols-2 container mx-auto">
+          <div class="pt-10">
+            <div class="md:flex items-center hidden">
+              <div class="box-3 rounded-full p-3">
+                <img src="assets/happy 1.svg" alt="" />
+              </div>
+              <div class="ps-6">
+                <h1 class="span-1 py-1 font-medium">เชื่อมต่อระบบขนส่ง</h1>
+                <h1 class="body-2 py-1 font-normal text-gray-400">
+                  เชื่อมไว้ภายในแอพเดียวจะสร้างออเดอร์หรือเรียก
+                  <br />ขนส่งก็ทำได้ไม่ต้องวุ่นวาย
+                </h1>
+              </div>
             </div>
-            <div class="ps-6">
-              <h1 class="span-1 py-1 font-medium">เชื่อมต่อระบบขนส่ง</h1>
-              <h1 class="body-2 py-1 font-normal text-gray-400">
-                เชื่อมไว้ภายในแอพเดียวจะสร้างออเดอร์หรือเรียก
-                <br />ขนส่งก็ทำได้ไม่ต้องวุ่นวาย
+            <div class="pt-5">
+              <h1 class="head-3 font-semibold">
+                เชื่อมต่อระบบขนส่งไว้ภายในแอพเดียว <br />จะสร้างออเดอร์
+                หรือเรียกขนส่งก็ทำได้ <br />ไม่ต้องวุ่นวาย
+              </h1>
+              <h1 class="body-1 pt-5 font-normal text-gray-400">
+                Chatnshops เชื่อมต่อกับระบบขนส่งชั้นนำในประเทศ
+                <br />ไว้ให้ท่านแล้วภายในแอพเดียว จะใช้ขนส่งในระบบของเรา
+                <br />หรือจะเชื่อมต่อระบบด้วยตนเองก็ทำได้ไม่ต้องง้อใคร สะดวก
+                สบาย <br />กำไรเพียบ
               </h1>
             </div>
+            <img
+              src="assets/block3 Image Animation.png"
+              class="md:hidden block mt-12"
+              alt=""
+            />
           </div>
-          <div class="pt-5">
-            <h1 class="head-3 font-semibold">
-              เชื่อมต่อระบบขนส่งไว้ภายในแอพเดียว <br />จะสร้างออเดอร์
-              หรือเรียกขนส่งก็ทำได้ <br />ไม่ต้องวุ่นวาย
-            </h1>
-            <h1 class="body-1 pt-5 font-normal text-gray-400">
-              Chatnshops เชื่อมต่อกับระบบขนส่งชั้นนำในประเทศ
-              <br />ไว้ให้ท่านแล้วภายในแอพเดียว จะใช้ขนส่งในระบบของเรา
-              <br />หรือจะเชื่อมต่อระบบด้วยตนเองก็ทำได้ไม่ต้องง้อใคร สะดวก สบาย
-              <br />กำไรเพียบ
-            </h1>
-          </div>
-          <img
-            src="assets/block3 Image Animation.png"
-            class="md:hidden block"
-            alt=""
-          />
         </div>
       </div>
     </div>
 
-    <div class="connect mt-28 bg-app">
-      <div class="md:grid md:grid-cols-2 flex items-center">
-        <div class="md:w-full w-1/4 ps-32 h-full bg"></div>
+    <div class="connect mt-28 bg-app relative">
+      <div class="bg-connect absolute w-full h-full z-10"></div>
+      <div class="md:grid md:grid-cols-2 flex items-center relative z-20">
+        <div
+          class="md:w-full md:w-1/4 ps-32 h-full bg lg:opacity-100 opacity-0"
+        ></div>
         <div class="flex flex-col items-start py-48">
           <div class="text-center font-bold text-white">
             <h1 class="head-1">“ Chatnshops ”</h1>
             <h2 class="head-2">เชื่อมต่อกับอะไรได้บ้าง?</h2>
           </div>
-          <div class="pt-8 ms-12">
+          <div class="pt-8 lg:ms-12">
             <img src="assets/Frame 1597884190.png" alt="" />
           </div>
           <div class="pt-5">
@@ -1153,12 +1159,12 @@
 
           <a
             href="Register.html"
-            class="bg-primary text-white absolute bottom-0 mx-12 px-12 mb-32 rounded-full py-3"
+            class="bg-primary text-white absolute bottom-0 mx-12 px-12 mb-24 rounded-full py-3"
             >สมัครสมาชิกฟรี</a
           >
         </div>
       </div>
-      <div class="content-2 md:block hidden` content-block relative">
+      <div class="content-2 md:block hidden content-block relative">
         <img
           src="assets/content-bg-2.png"
           class="w-full h-full object-cover -z-10"

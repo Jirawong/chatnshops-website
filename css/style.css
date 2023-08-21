@@ -247,10 +247,10 @@ body {
   .block-3 {
     background-size: 70%;
   }
-  .bg-app .bg {
-    background-image: url("../assets/Phone mock up@2x.png");
-    background-size: auto 100%;
-    background-position: 70% 0;
+
+  .bg-connect {
+    background-image: url("../assets/Phone mock up.png");
+    background-position: 150%;
     background-repeat: no-repeat;
   }
 }
@@ -263,6 +263,11 @@ body {
 @media (max-width: 772px) {
   .block-3 {
     background: none;
+  }
+  .bg-connect {
+    background-image: url("../assets/Phone mock up.png");
+    background-position: 110%;
+    background-repeat: no-repeat;
   }
 }
 .content-block {
