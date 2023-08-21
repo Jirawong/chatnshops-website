@@ -1507,6 +1507,15 @@ body {
   font-family: "Prompt", sans-serif;
 }
 
+.how-to-use:hover path {
+  stroke: #2925cc;
+  transition: all 0.2s ease-in-out;
+}
+
+.how-to-use .svg-dropdown.rotated path {
+  stroke: #2925cc;
+}
+
 /*+++++++++++++++++++++++++++++*/
 
 /*+++++++++ Banner ++++++++*/
@@ -1520,33 +1529,6 @@ body {
 }
 
 /*animation*/
-
-@keyframes wiggle {
-  0%,
-  100% {
-    transform: rotate(-3deg) translateY(15px);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-}
-
-.animate-wiggle {
-  animation: wiggle 5s linear infinite;
-}
-
-.delay-1 {
-  animation-delay: 1s;
-}
-
-.delay-2 {
-  animation-delay: 2.5s;
-}
-
-.delay-3 {
-  animation-delay: 4s;
-}
 
 .box-1 {
   background-color: #08d3bb;
@@ -1612,7 +1594,7 @@ body {
   position: absolute;
   transition: all 0.5s ease-in-out;
   z-index: 0;
-  width: 40%;
+  width: 43%;
   border-radius: 15px;
 }
 
@@ -1627,6 +1609,22 @@ body {
 .carousel-item-4 {
   opacity: 0.5;
   z-index: 1;
+}
+
+.carousel-item-2 *,
+.carousel-item-3 *,
+.carousel-item-4 * {
+  color: #192962 !important;
+  border-color: #192962 !important;
+}
+
+.carousel-item-2 img,
+.carousel-item-3 img,
+.carousel-item-4 img,
+.carousel-item-2 .line,
+.carousel-item-3 .line,
+.carousel-item-4 .line {
+  filter: grayscale();
 }
 
 .carousel-item-2 .hide,
@@ -1699,13 +1697,13 @@ body {
 
 .carousel-controls-previous {
   position: absolute;
-  left: 5%;
+  left: 0;
   top: 50%;
 }
 
 .carousel-controls-next {
   position: absolute;
-  right: 5%;
+  right: 0;
   top: 50%;
 }
 
@@ -1748,6 +1746,8 @@ body {
   .carousel-item-3,
   .carousel-item-4 {
     opacity: 0 !important;
+    left: 0;
+    transform: translateX(0);
   }
 
   .carousel-item {
@@ -1755,7 +1755,6 @@ body {
   }
 
   .carousel-controls {
-    display: none !important;
   }
 }
 
@@ -1765,7 +1764,7 @@ body {
   color: #ff3838;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .block-3 {
     background-size: 70%;
   }
@@ -1883,7 +1882,7 @@ body {
 }
 
 .shadow-nav {
-  box-shadow: 0px 0px 15px 10px rgb(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1024px) {
@@ -2092,11 +2091,6 @@ body {
             padding-inline-end: 8rem;
   }
 
-  .lg\:ps-12 {
-    -webkit-padding-start: 3rem;
-            padding-inline-start: 3rem;
-  }
-
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -2126,11 +2120,6 @@ body {
 
   .xl\:justify-between {
     justify-content: space-between;
-  }
-
-  .xl\:ps-56 {
-    -webkit-padding-start: 14rem;
-            padding-inline-start: 14rem;
   }
 }
 

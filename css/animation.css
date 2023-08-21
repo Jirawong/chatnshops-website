@@ -1,0 +1,98 @@
+@keyframes fadeUp {
+  0% {
+    position: relative;
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    position: relative;
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg) translateY(15px);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+@media (min-width: 1024px) {
+  .animate-wiggle {
+    animation: wiggle 5s linear infinite;
+  }
+
+  .fadeLeft {
+    animation: fadeLeft 1s ease-in-out;
+  }
+
+  .fadeRight {
+    animation: fadeRight 1s ease-in-out forwards;
+  }
+
+  .fadeUp {
+    animation: fadeUp 1s ease-in-out;
+  }
+}
+
+@media (max-width: 1023px) {
+  .animate-wiggle {
+    animation: fadeUp 5s linear infinite;
+  }
+
+  .fadeLeft {
+    animation: fadeUp 1s ease-in-out;
+  }
+
+  .fadeRight {
+    animation: fadeUp 1s ease-in-out forwards;
+  }
+
+  .fadeUp {
+    animation: fadeUp 1s ease-in-out;
+  }
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2.5s;
+}
+
+.delay-3 {
+  animation-delay: 4s;
+}

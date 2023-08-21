@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="dist/style.css" />
     <link rel="stylesheet" href="css/typography.css" />
-
+    <link rel="stylesheet" href="css/animation.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font -->
@@ -207,7 +207,7 @@
         </div>
       </nav>
 
-      <div class="lg:container mx-auto text-center mt-16">
+      <div class="lg:container mx-auto text-center mt-16 wow fadeUp">
         <h1 class="head-1 font-bold text-white">
           ระบบ <span class="text-error">Liveสด</span> ดูดคอมเมนต์
           <br />CFจัดการออเดอร์ และขนส่งราคาถูก
@@ -219,7 +219,7 @@
         </p>
       </div>
 
-      <div class="container mx-auto">
+      <div class="container mx-auto wow fadeUp">
         <div
           class="flex relative top-20 2xl:justify-between justify-center items-center"
         >
@@ -415,7 +415,7 @@
     <!-- About -->
 
     <div class="about" id="about">
-      <div class="text-center mt-64 container px-24 mx-auto">
+      <div class="text-center mt-64 container px-24 mx-auto wow fadeUp">
         <h1 class="head-2 font-semibold">เกี่ยวกับระบบ Chatnshop</h1>
         <h2 class="body-1 text-gray-400 mt-8">
           Application ที่เชื่อมต่อกับ Platform ออนไลน์ต่าง ๆ รวมไปถึง
@@ -443,7 +443,7 @@
         <div class="line absolute xl:block hidden top-32 left-24 -z-50">
           <img src="assets/line.png" alt="" />
         </div>
-        <div class="grid lg:grid-cols-2">
+        <div class="grid lg:grid-cols-2 wow fadeRight">
           <div class="pt-24">
             <div class="md:flex items-center hidden">
               <div class="box-1 rounded-full p-3">
@@ -473,10 +473,10 @@
         </div>
 
         <div class="grid lg:grid-cols-2 pt-10">
-          <div class="lg:block hidden">
+          <div class="lg:block hidden wow fadeLeft">
             <img src="assets/block2 Image Animation.png" alt="" />
           </div>
-          <div class="pt-24 flex flex-col lg:items-end">
+          <div class="pt-24 flex flex-col lg:items-end wow fadeRight">
             <div class="md:flex hidden items-center self-start ms-20">
               <div class="box-2 rounded-full p-3">
                 <img src="assets/happy 1.svg" alt="" />
@@ -507,8 +507,10 @@
         </div>
       </div>
 
-      <div class="grid lg:grid-cols-2 block-3 xl:ps-56 lg:ps-12 pt-10 mt-36">
-        <div class="pt-10 lg:px-0 px-24">
+      <div
+        class="wow fadeRight grid lg:grid-cols-2 block-3 container pt-10 mt-36"
+      >
+        <div class="pt-10">
           <div class="md:flex items-center hidden">
             <div class="box-3 rounded-full p-3">
               <img src="assets/happy 1.svg" alt="" />
@@ -535,7 +537,7 @@
           </div>
           <img
             src="assets/block3 Image Animation.png"
-            class="lg:hidden block"
+            class="md:hidden block"
             alt=""
           />
         </div>
@@ -959,6 +961,7 @@
               </div>
             </div>
           </div>
+
           <div class="carousel-controls">
             <div class="carousel-controls-previous">
               <img src="assets/arrow-left-circle.png" alt="" />
@@ -1273,6 +1276,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/carousel.js"></script>
-    <script></script>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

@@ -34,6 +34,8 @@ $(document).ready(function () {
   });
 
   $(".lang-dropdown .collapse-content button").click(function () {
+    $(".lang-dropdown .collapse-content").slideToggle("fast");
+
     $(".lang-dropdown .collapse-content button").removeClass(
       "active font-semibold"
     );
