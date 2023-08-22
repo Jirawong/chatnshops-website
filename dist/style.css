@@ -1024,10 +1024,6 @@ video {
   flex-direction: column;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-end {
   align-items: flex-end;
 }
@@ -1309,11 +1305,6 @@ video {
           padding-inline-start: 0.75rem;
 }
 
-.ps-32 {
-  -webkit-padding-start: 8rem;
-          padding-inline-start: 8rem;
-}
-
 .ps-5 {
   -webkit-padding-start: 1.25rem;
           padding-inline-start: 1.25rem;
@@ -1468,10 +1459,6 @@ video {
   text-decoration-line: line-through;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-30 {
   opacity: 0.3;
 }
@@ -1541,11 +1528,6 @@ body {
 
 .bg-app {
   background: linear-gradient(180deg, #0070f2 0%, #4b48e5 100%);
-}
-
-.bg-app .bg {
-  background-image: url("../assets/Phone mock up@2x.png");
-  background-size: cover;
 }
 
 .bg-footer {
@@ -1757,7 +1739,7 @@ body {
   color: #ff3838;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 773px) and (max-width: 1024px) {
   .block-3 {
     background-size: 70%;
   }
@@ -1765,17 +1747,18 @@ body {
   .bg-connect {
     background-image: url("../assets/Phone mock up.png");
     background-position: 150%;
+    background-size: auto;
     background-repeat: no-repeat;
   }
 }
 
-.bg-app .bg {
+.bg-connect {
   background-image: url("../assets/Phone mock up@2x.png");
-  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 772px) {
+@media (min-width: 460px) and (max-width: 772px) {
   .block-3 {
     background: none;
   }
@@ -1783,6 +1766,20 @@ body {
   .bg-connect {
     background-image: url("../assets/Phone mock up.png");
     background-position: 110%;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 459px) {
+  .block-3 {
+    background: none;
+  }
+
+  .bg-connect {
+    background-image: url("../assets/Phone mock up.png");
+    background-position: 95%;
+    background-size: auto;
     background-repeat: no-repeat;
   }
 }
@@ -2012,20 +2009,21 @@ body {
     display: none;
   }
 
-  .md\:w-1\/4 {
-    width: 25%;
-  }
-
   .md\:w-4\/6 {
     width: 66.666667%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:pt-20 {
@@ -2101,10 +2099,6 @@ body {
 
   .lg\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .lg\:opacity-100 {
-    opacity: 1;
   }
 }
 

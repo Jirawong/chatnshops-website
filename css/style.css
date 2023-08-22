@@ -43,10 +43,7 @@ body {
 .bg-app {
   background: linear-gradient(180deg, #0070f2 0%, #4b48e5 100%);
 }
-.bg-app .bg {
-  background-image: url("../assets/Phone mock up@2x.png");
-  background-size: cover;
-}
+
 .bg-footer {
   background: linear-gradient(180deg, #2925cc 0%, #4b48e5 100%);
 }
@@ -243,7 +240,7 @@ body {
   color: #ff3838;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 773px) and (max-width: 1024px) {
   .block-3 {
     background-size: 70%;
   }
@@ -251,22 +248,38 @@ body {
   .bg-connect {
     background-image: url("../assets/Phone mock up.png");
     background-position: 150%;
+    background-size: auto;
+
     background-repeat: no-repeat;
   }
 }
 
-.bg-app .bg {
+.bg-connect {
   background-image: url("../assets/Phone mock up@2x.png");
-  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
-@media (max-width: 772px) {
+@media (min-width: 460px) and (max-width: 772px) {
   .block-3 {
     background: none;
   }
   .bg-connect {
     background-image: url("../assets/Phone mock up.png");
     background-position: 110%;
+    background-size: auto;
+
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 459px) {
+  .block-3 {
+    background: none;
+  }
+  .bg-connect {
+    background-image: url("../assets/Phone mock up.png");
+    background-position: 95%;
+    background-size: auto;
     background-repeat: no-repeat;
   }
 }
