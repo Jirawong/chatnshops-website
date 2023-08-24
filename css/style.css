@@ -1,7 +1,3 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 body {
   font-family: "Prompt", sans-serif;
 }
@@ -52,6 +48,13 @@ body {
   background: linear-gradient(180deg, #324fff 0%, #2482fd 100%) !important;
 }
 
+@media (min-width: 1800px) {
+  .block-3 {
+    background-image: url("../assets/block3 Image Animation.png");
+    background-repeat: no-repeat;
+    background-position: 900px !important;
+  }
+}
 .block-3 {
   background-image: url("../assets/block3 Image Animation.png");
   background-repeat: no-repeat;

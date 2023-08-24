@@ -785,8 +785,7 @@ video {
 }
 
 .me-1 {
-  -webkit-margin-end: 0.25rem;
-          margin-inline-end: 0.25rem;
+  margin-inline-end: 0.25rem;
 }
 
 .mr-2 {
@@ -798,53 +797,43 @@ video {
 }
 
 .ms-1 {
-  -webkit-margin-start: 0.25rem;
-          margin-inline-start: 0.25rem;
+  margin-inline-start: 0.25rem;
 }
 
 .ms-10 {
-  -webkit-margin-start: 2.5rem;
-          margin-inline-start: 2.5rem;
+  margin-inline-start: 2.5rem;
 }
 
 .ms-12 {
-  -webkit-margin-start: 3rem;
-          margin-inline-start: 3rem;
+  margin-inline-start: 3rem;
 }
 
 .ms-16 {
-  -webkit-margin-start: 4rem;
-          margin-inline-start: 4rem;
+  margin-inline-start: 4rem;
 }
 
 .ms-24 {
-  -webkit-margin-start: 6rem;
-          margin-inline-start: 6rem;
+  margin-inline-start: 6rem;
 }
 
 .ms-3 {
-  -webkit-margin-start: 0.75rem;
-          margin-inline-start: 0.75rem;
+  margin-inline-start: 0.75rem;
 }
 
 .ms-4 {
-  -webkit-margin-start: 1rem;
-          margin-inline-start: 1rem;
+  margin-inline-start: 1rem;
 }
 
 .ms-5 {
-  -webkit-margin-start: 1.25rem;
-          margin-inline-start: 1.25rem;
+  margin-inline-start: 1.25rem;
 }
 
 .ms-7 {
-  -webkit-margin-start: 1.75rem;
-          margin-inline-start: 1.75rem;
+  margin-inline-start: 1.75rem;
 }
 
 .ms-8 {
-  -webkit-margin-start: 2rem;
-          margin-inline-start: 2rem;
+  margin-inline-start: 2rem;
 }
 
 .mt-12 {
@@ -978,6 +967,10 @@ video {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-6\/12 {
+  width: 50%;
 }
 
 .w-64 {
@@ -1197,11 +1190,6 @@ video {
   padding-right: 5rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1281,43 +1269,35 @@ video {
 }
 
 .pe-2 {
-  -webkit-padding-end: 0.5rem;
-          padding-inline-end: 0.5rem;
+  padding-inline-end: 0.5rem;
 }
 
 .ps-1 {
-  -webkit-padding-start: 0.25rem;
-          padding-inline-start: 0.25rem;
+  padding-inline-start: 0.25rem;
 }
 
 .ps-12 {
-  -webkit-padding-start: 3rem;
-          padding-inline-start: 3rem;
+  padding-inline-start: 3rem;
 }
 
 .ps-2 {
-  -webkit-padding-start: 0.5rem;
-          padding-inline-start: 0.5rem;
+  padding-inline-start: 0.5rem;
 }
 
 .ps-3 {
-  -webkit-padding-start: 0.75rem;
-          padding-inline-start: 0.75rem;
+  padding-inline-start: 0.75rem;
 }
 
 .ps-5 {
-  -webkit-padding-start: 1.25rem;
-          padding-inline-start: 1.25rem;
+  padding-inline-start: 1.25rem;
 }
 
 .ps-6 {
-  -webkit-padding-start: 1.5rem;
-          padding-inline-start: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 
 .ps-8 {
-  -webkit-padding-start: 2rem;
-          padding-inline-start: 2rem;
+  padding-inline-start: 2rem;
 }
 
 .pt-0 {
@@ -1536,6 +1516,14 @@ body {
 
 .gradient-1 {
   background: linear-gradient(180deg, #324fff 0%, #2482fd 100%) !important;
+}
+
+@media (min-width: 1800px) {
+  .block-3 {
+    background-image: url("../assets/block3 Image Animation.png");
+    background-repeat: no-repeat;
+    background-position: 900px !important;
+  }
 }
 
 .block-3 {
@@ -1979,8 +1967,7 @@ body {
 
 @media (min-width: 640px) {
   .sm\:ms-16 {
-    -webkit-margin-start: 4rem;
-            margin-inline-start: 4rem;
+    margin-inline-start: 4rem;
   }
 }
 
@@ -2033,18 +2020,15 @@ body {
 
 @media (min-width: 1024px) {
   .lg\:ms-12 {
-    -webkit-margin-start: 3rem;
-            margin-inline-start: 3rem;
+    margin-inline-start: 3rem;
   }
 
   .lg\:ms-16 {
-    -webkit-margin-start: 4rem;
-            margin-inline-start: 4rem;
+    margin-inline-start: 4rem;
   }
 
   .lg\:ms-20 {
-    -webkit-margin-start: 5rem;
-            margin-inline-start: 5rem;
+    margin-inline-start: 5rem;
   }
 
   .lg\:mt-0 {
@@ -2089,8 +2073,7 @@ body {
   }
 
   .lg\:pe-32 {
-    -webkit-padding-end: 8rem;
-            padding-inline-end: 8rem;
+    padding-inline-end: 8rem;
   }
 
   .lg\:pt-0 {
